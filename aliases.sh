@@ -1,3 +1,6 @@
+source "$(dirname "${BASH_SOURCE[0]}")"/libs/source.sh
+include "all"
+
 alias ll="ls -lh"
 alias la="ls -lha"
 

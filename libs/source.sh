@@ -7,7 +7,10 @@
 include() {
   local name="$1"
   local functions=("block" "commands" "crossBlock" "crossDiv" "div" "hashBlock" "hashDiv" "pass-fail" "print" "statusBar")
-  declare -A libraries=([crossStandard]="crossBlock crossDiv pass-fail")
+  declare -A libraries=(
+    [all]="${functions[@]}"
+    [crossStandard]="crossBlock crossDiv pass-fail"
+    )
   local rootPath="$(dirname "${BASH_SOURCE[0]}")"
 
   for function in ${functions[@]}
