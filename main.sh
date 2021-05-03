@@ -24,7 +24,9 @@ gt() {
       cl ${HOME}
       shift
     ;;
-    lab1)
+    web)
+      cl "/var/www"
+      shift
     ;;
    esac
 }
