@@ -35,7 +35,7 @@ gt() {
 update() {
   case $1 in
     web)
-      sudo cp -R $HOME/cs260.xyz /var/www
+      sudo cp -R $HOME/cs260.xyz/* /var/www
     ;;
   esac
 }
