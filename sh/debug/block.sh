@@ -23,6 +23,7 @@ block() {
   local rightEdge='X'
   local topEdge='X'
   local bottomEdge='X'
+  local newLine=1
   local width=89
   local out=''
 
@@ -71,6 +72,9 @@ block() {
         i=$(($i + 1))
         width=${args[i]}
       ;;
+      -n|--noNewLine)
+        newLine=0
+      ;;
       -d|-dbg|--debug)
         printPermission=4
       ;;
@@ -104,7 +108,11 @@ block() {
   out+="$(div -oe "$corners" -a "$bottomEdge" -w $width)"
 
   # A single call to stdout reduces processing time
-  print3 -e "$out"
+  if [ $newLine -eq 1 ]; then
+    print3 -e "$out"
+  else
+    print3 -ne "$out"
+  fi
 }
 
 block_debug() {

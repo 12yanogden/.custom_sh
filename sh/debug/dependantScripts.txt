@@ -1,0 +1,13 @@
+/bin/bash
+/opt/homebrew/bin/bash
+/Users/ryan/BYU/CS 340/M2/M2a/bash
+//bash
+/opt/homebrew/Cellar/bash/5.1.16/bin/bash
+/Users/ryan/BYU/CS340/tweeter/aws_scripts/setDDBCapacity.sh
+/Users/ryan/SDKs/.upgrade_flutter.sh
+/Users/ryan/SDKs/.customize_shebang.sh
+/Users/ryan/.plaitBlock.sh
+/Users/ryan/Games/umoria/run.sh
+/Users/ryan/Downloads/.downloads_manager/downloads_manager.sh
+/opt/homebrew/Cellar/bash/5.2.2/bin/bash
+/opt/homebrew/Cellar/bash/5.2.9/bin/bash
